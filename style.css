@@ -118,9 +118,6 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
 }
-.section-container {
-  display: flex;
-}
 
 /* profile section */
 #profile {
@@ -224,7 +221,8 @@ section {
 }
 .about-pic {
   border-radius:2rem;
-  height: 70%;
+  width: 400px;
+  object-fit: cover;
 }
 .arrow {
   position: absolute;
@@ -234,15 +232,18 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  display: flex;
 }
 .section_pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
-.text-container {
+#text {
   font-size: 1.2em;
+  line-height: 1.5em;
 }
+
 
 /* education section */
 .about-containers {
@@ -278,13 +279,13 @@ section {
   text-align:initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 2rem;
   justify-content: space-around;
 }
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 0.5rem;
 }
 article .icon {
